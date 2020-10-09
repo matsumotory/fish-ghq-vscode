@@ -4,7 +4,7 @@ Search and open a git repository as vscode project or a specified file of the re
 ## Install
 - install vscode cli
 - install ghq
-- install fzf
+- install fzf, fzy, peco, percol or skim
 - install fisher
 - install fish-ghq
 - then, install fish-ghq-vscode
@@ -12,6 +12,12 @@ Search and open a git repository as vscode project or a specified file of the re
 ```
 fisher add matsumotory/fish-ghq-vscode
 ```
+
+## Support variables of fish-ghq
+
+- Support `GHQ_SELECTOR` and `GHQ_SELECTOR_OPTS`
+
+- More information: [fish-ghq variables](https://github.com/decors/fish-ghq#variables)
 
 ## Key bindings
 
