@@ -19,6 +19,8 @@ function __ghq_vscode_open_project -d "Open a project of a git repository by vsc
   end
 
   if test -n "$repo" 
+    cd "$repo"
     code "$repo"/.
+    commandline -f repaint   
   end
 end
