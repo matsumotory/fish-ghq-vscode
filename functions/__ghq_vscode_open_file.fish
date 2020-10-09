@@ -21,7 +21,8 @@ function __ghq_vscode_open_file -d "Open a file in a git repository by vscode"
   if test -n "$repo" 
     cd 
     # ref: kentaro/fish-ghq-vscode Thanks!
-    set file (cd $repo; and git ls-files | "$selector" $selector_options)
+    cd $repo
+    set file (git ls-files | "$selector" $selector_options)
     if test -n "$file"
       code "$repo"/"$file"
     end
