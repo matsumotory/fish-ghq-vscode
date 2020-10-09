@@ -26,5 +26,6 @@ function __ghq_vscode_open_file -d "Open a file in a git repository by vscode"
     if test -n "$file"
       code "$repo"/"$file"
     end
+    commandline -f repaint
   end
 end
